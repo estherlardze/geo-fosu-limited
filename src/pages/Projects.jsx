@@ -7,7 +7,6 @@ const Projects = () => {
     <div>
       <ProjectHero/>
       <ProjectText/>
-      <Footer/>
     </div>
   )
 }
