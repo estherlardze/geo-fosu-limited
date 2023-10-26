@@ -1,11 +1,12 @@
 import React from 'react'
-import {AboutHeader, AboutText} from '../components/index'
+import {AboutHero, AboutText, Footer} from '../components/index'
 
 const About = () => {
   return (
     <div>
-      <AboutHeader/>
+      <AboutHero/>
       <AboutText/>
+      <Footer/>
      </div>
     
   )

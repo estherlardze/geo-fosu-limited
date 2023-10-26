@@ -17,12 +17,12 @@ const Footer = () => {
       </div>
 
       <div className='bg-white items-center font-bold  justify-center py-2 flex flex-col sm:flex-row text-sm sm:text-lg'>
-        <span className='text-orange-500 mr-2'>Email:</span>
+        <span className='text-orange mr-2'>Email:</span>
         <span className='text-sm sm:text-lg text-black/90'>
          Geofosulimitedcompany@gmail.com
         </span>
       </div>
-      <div className='bg-orange-500 py-4'>
+      <div className='bg-orange py-4'>
       </div>
     </footer>
   )

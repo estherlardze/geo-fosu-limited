@@ -7,10 +7,14 @@ export default {
   theme: {
     extend: {
       colors:{
-        blue : '#32a4a8'
+        blue : '#0e86a4',
+        orange: '#ff6600'
       },
       backgroundImage: {
-        "header" : "url('/src/assets/header.jpg')",
+        "office" : "url('/src/assets/images/OFFC.jpg')",
+        "workers" : "url('/src/assets/images/WORKERS.jpg')",
+        "work" : "url('/src/assets/images/WORK.jpg')",
+        "retro" : "url('/src/assets/images/RETRO.png')",
       }
     },
   },

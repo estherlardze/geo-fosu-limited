@@ -3,7 +3,9 @@ import React from 'react'
 const AboutText = () => {
   return (
     <div className='w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] mt-[50px]'>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima quisquam cupiditate 
+    <div className='inline'>
+     <div className='w-[150px] h-[70px] bg-orange-500 float-left'></div>
+    <p className='inline-block'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima quisquam cupiditate 
       numquam dolores veniam asperiores ratione aspernatur, ea rem quod ipsam necessitatibus voluptatum 
       non in alias perferendis laboriosam reprehenderit tempore? Dolorum ducimus esse voluptatibus recusandae 
       accusantium optio labore similique laudantium numquam, repellendus sequi minima itaque autem repellat 
@@ -17,11 +19,10 @@ const AboutText = () => {
       rerum et ea est. Consectetur ipsum obcaecati odio provident minus repellat unde eveniet asperiores cum adipisci 
       harum enim blanditiis sapiente suscipit ad magni dolore error itaque soluta earum quo repudiandae, quidem iusto?
       Natus amet distinctio maiores in doloremque quia assumenda voluptatibus ea, sint repudiandae tenetur cupiditate beatae?</p>
-
-      <div className='flex mt-[40px] gap-8 justify-center flex-wrap'>
-        <div className='w-full sm:w-[180px] h-[70px] bg-orange-500'></div>
-        <div className='w-full sm:w-[180px] h-[70px] bg-orange-500'></div>
-        <div className='w-full sm:w-[180px] h-[70px] bg-orange-500'></div>
+      </div>
+      <div className='grid grid-cols-5 mt-[40px] gap-8'>
+        <div className='w-full col-span-5 sm:col-span-2  h-[70px] bg-orange-500'></div>
+        <div className='w-full col-span-5 sm:col-span-3 h-[70px] bg-orange-500'></div>
       </div>
   </div>
   )
