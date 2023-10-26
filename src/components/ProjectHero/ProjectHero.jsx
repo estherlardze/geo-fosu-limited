@@ -5,8 +5,8 @@ import {Navbar} from '../index'
 const AboutHero = () => {
  
   return (
-  <div className="bg-office bg-cover bg-no-repeat bg-center h-[50vh]">
-    <div className="bg-black/80 w-[100%] h-[50vh] border-b-[5px] border-orange">
+  <div className="bg-retro bg-cover bg-no-repeat bg-center h-[50vh]">
+    <div className="bg-orange/70 w-[100%] h-[50vh] border-b-[5px] border-blue">
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-6 text-white justify-between'>
@@ -15,7 +15,7 @@ const AboutHero = () => {
           </article>
          <article>
          <div className='flex gap-6 items-center'>
-          <img src={logo} alt="logo" className='w-[40px] h-[40px] bg-white rounded-full'/>
+          <img src={logo} alt="logo" className='w-[50px] h-[50px] bg-white rounded-full'/>
           <div className='text-white '>
            <h1 className='text-2xl font-bold'>GEO-FOSU</h1>
            <h4 className='font-semibold'>Limited Company</h4>

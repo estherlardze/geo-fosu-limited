@@ -10,3 +10,4 @@ export {default as constnn} from './images/CONSTNN.jpg';
 export {default as build} from './images/BUILD.webp';
 export {default as ach} from './images/ACH.jpg';
 export {default as work} from './images/WORK.jpg';
+export {default as research} from './images/research.jpg'

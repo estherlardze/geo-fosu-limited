@@ -1,5 +1,5 @@
 import React from 'react'
-import {workers, work, offc} from '../../assets/index'
+import {workers, work, research} from '../../assets/index'
 import { Link } from 'react-router-dom'
 
 
@@ -16,7 +16,7 @@ const Services = () => {
      <Link to='/research'>
       <div  data-aos="zoom-in"
        className='flex justify-center my-6 relative text-white border-[6px] border-black/80'>
-        <img src={offc} alt="service" className='w-full h-[18rem]'/>
+        <img src={research} alt="service" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
             <p className='text-2xl uppercase'>Geo-fosu</p>

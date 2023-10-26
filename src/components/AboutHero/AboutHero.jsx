@@ -15,7 +15,7 @@ const AboutHero = () => {
           </article>
          <article>
          <div className='flex gap-6 items-center'>
-          <img src={logo} alt="logo" className='w-[40px] h-[40px] bg-white rounded-full'/>
+          <img src={logo} alt="logo" className='w-[50px] h-[50px] bg-white rounded-full'/>
           <div className='text-white '>
            <h1 className='text-2xl font-bold'>GEO-FOSU</h1>
            <h4 className='font-semibold'>Limited Company</h4>

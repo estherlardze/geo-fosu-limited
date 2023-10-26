@@ -4,7 +4,7 @@ import {Navbar} from '../index'
 
 
 const Hero = ({title}) => {
-  const [changeBg, setChangeBg] = useState("bg-office")
+  const [changeBg, setChangeBg] = useState("")
 
   useEffect(() => {
     const currentPage = window.location.pathname;
@@ -13,7 +13,7 @@ const Hero = ({title}) => {
     } 
     else if(currentPage === '/research')
     {
-      setChangeBg('bg-office');
+      setChangeBg('bg-research');
     }
     else if(currentPage === '/management')
     {
