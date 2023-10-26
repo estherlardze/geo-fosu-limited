@@ -90,7 +90,7 @@ const AboutText = () => {
             </p>
           ))}
         </div>
-        <p className='mt-8' data-aos="fade-up">
+        <p className='mt-8 mb-[70px]' data-aos="fade-up">
           Thank you for visiting GEO-FOSU LIMITED COMPANY. We invite you to explore our services, share in our commitment 
           to excellence, and join us on our journey to build dreams, nurture knowledge, and manage excellence. 
           We look forward to working with you and enriching the lives of our clients and communities.</p>

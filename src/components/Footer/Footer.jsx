@@ -4,7 +4,7 @@ import {PiPhoneCallFill} from 'react-icons/pi'
 
 const Footer = () => {
   return (
-    <footer className='mt-[50px] w-[100%] overflow-hidden'>
+    <footer className='w-[100%] overflow-hidden'>
       <div 
        className='flex flex-col sm:flex-row bg-black/90 text-white py-2 text-sm sm:text-lg items-center justify-center gap-4 sm:gap-8'>
         <div className='flex items-center gap-2'>

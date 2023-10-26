@@ -10,6 +10,8 @@ export {default as ConstructionText} from './ConstructionText/ConstructionText';
 export {default as ManagementText} from './ManagementText/ManagementText';
 export {default as AboutHero} from './AboutHero/AboutHero';
 export {default as ProjectHero} from './ProjectHero/ProjectHero';
+export {default as Form} from './ContactForm/Form';
+
 
 
 

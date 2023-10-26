@@ -2,7 +2,7 @@ import {data} from '.'
 
 const ConstructionText = () => {
   return (
-    <section className='w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] mt-[50px]'>
+    <section className='w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] my-[50px]'>
       <h1 className='text-center text-3xl md:4xl lg:text-5xl text-orange font-bold uppercase'>Our services</h1>
       <ul className='mt-8'>
         {data.map((item, index) => (

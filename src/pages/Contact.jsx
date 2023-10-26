@@ -1,4 +1,4 @@
-import {Navbar, Footer} from '../components/index'
+import {Navbar, Footer, Form} from '../components/index'
 import {logo} from '../assets/index'
 
 const Contact = () => {
@@ -29,7 +29,8 @@ const Contact = () => {
     </div>
   </div>
 
-   <div className="flex items-center justify-center my-8 w-[90%] mx-[5%] md:w-[80%] md:mx-[10%]">
+<div className='bg-gray-100'>
+   <div className="flex items-center justify-center py-12 w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] ">
       <div className="w-full lg:w-[29rem] p-6 bg-black/10 rounded shadow-lg font-semibold" data-aos="zoom-in">
         <h1 className="text-2xl font-bold mb-4">Contact Information</h1>
         <div className="mb-4">
@@ -40,6 +41,9 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </div>
+
+ <Form/>
  <Footer/>
 </section>
   )

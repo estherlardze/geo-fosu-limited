@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
-    <section className='w-[100%] overflow-hidden'>
+    <section className='w-[100%] overflow-hidden mb-[50px]'>
      <div className='w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] mt-[50px]'>
       <div className='flex items-center justify-center mb-8'>
         <hr className='border border-orange w-[45%]'/>
