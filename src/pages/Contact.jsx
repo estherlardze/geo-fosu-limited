@@ -3,7 +3,7 @@ import {logo} from '../assets/index'
 
 const Contact = () => {
   return (
-    <section>
+    <section className='w-[100%] overflow-hidden'>
     <div className="bg-work bg-cover bg-no-repeat bg-center h-[50vh]">
     <div className="bg-black/70 w-[100%] h-[50vh] border-b-[5px] border-orange">
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
@@ -30,7 +30,7 @@ const Contact = () => {
   </div>
 
    <div className="flex items-center justify-center my-8 w-[90%] mx-[5%] md:w-[80%] md:mx-[10%]">
-      <div className="w-full lg:w-[29rem] p-6 bg-black/10 rounded shadow-lg font-semibold">
+      <div className="w-full lg:w-[29rem] p-6 bg-black/10 rounded shadow-lg font-semibold" data-aos="zoom-in">
         <h1 className="text-2xl font-bold mb-4">Contact Information</h1>
         <div className="mb-4">
           <p className='my-2'>ADDRESS: Post Office Box 36.</p>

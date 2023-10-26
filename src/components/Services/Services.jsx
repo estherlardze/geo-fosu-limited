@@ -14,7 +14,8 @@ const Services = () => {
       </div>
 
      <Link to='/research'>
-      <div className='flex justify-center my-6 relative text-white border-[6px] border-black/80'>
+      <div  data-aos="zoom-in"
+       className='flex justify-center my-6 relative text-white border-[6px] border-black/80'>
         <img src={offc} alt="service" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
@@ -27,8 +28,9 @@ const Services = () => {
 
      
      <div className='grid grid-cols-2 gap-6'>
-     <Link to='/construction'>
-      <div className='flex justify-center my-6 relative text-white col-span-2 md:col-span-1 border-[6px] border-orange'>
+     <Link to='/construction' className='col-span-2 md:col-span-1'>
+      <div  data-aos="zoom-in"
+       className='my-6 relative text-white border-[6px] border-orange'>
         <img src={workers} alt="service" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
@@ -39,8 +41,9 @@ const Services = () => {
        </div> 
       </Link>   
 
-      <Link to='/management'>
-       <div className='flex justify-center my-6 relative text-white col-span-2 md:col-span-1 border-[6px] border-blue/80'>
+      <Link to='/management' className='col-span-2 md:col-span-1'>
+       <div data-aos="zoom-in"
+        className='my-6 relative text-white  border-[6px] border-blue/80'>
         <img src={work} alt="service" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
@@ -51,6 +54,7 @@ const Services = () => {
        </div>
       </Link>
       </div>
+
    </div>
    </section>
   )

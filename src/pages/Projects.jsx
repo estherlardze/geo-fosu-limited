@@ -1,12 +1,13 @@
 import React from 'react'
-import {Hero, ProjectText} from '../components/index'
+import {ProjectHero, ProjectText, Footer} from '../components/index'
 
 
 const Projects = () => {
   return (
     <div>
-      <Hero title='Project management consult'/>
+      <ProjectHero/>
       <ProjectText/>
+      <Footer/>
     </div>
   )
 }
