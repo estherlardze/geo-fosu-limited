@@ -15,7 +15,7 @@ const AboutText = () => {
         </div>
         <div className='col-span-2 lg:col-span-1' data-aos="fade-left">
         <p className='text-orange text-left font-bold text-lg'>About Us</p>
-        <p className='mt-4 text-lg font-semibold lg:leading-[2.0] text-black/80'>
+        <p className='mt-4 text-lg sm:font-semibold lg:leading-[2.0] text-black/80'>
         At GEO-FOSU, we are more than just a company; we are a passionate and purpose-driven 
         organization dedicated to delivering excellence in three distinct areas - Construction
         Consultation, Research Consultation, and Project Management Consultation. As you explore 
@@ -29,15 +29,15 @@ const AboutText = () => {
         <p className='text-orange text-left font-bold text-lg'>Our Businesses</p>
           <ul>
             {business.map((data, index) => (
-              <li className='text-lg my-3 font-semibold' key={index} data-aos="fade-up">
-                <span className='text-xl font-bold mr-2 '>{data.title}</span>
-                 <span className='text-black/80'>{data.text}</span>
+              <li className='text-lg my-3 ' key={index} data-aos="fade-up">
+                <span className='text-lg sm:text-xl font-bold mr-2 '>{data.title}</span>
+                 <span className='text-black/80 sm:font-semibold'>{data.text}</span>
               </li>
             ))}
           </ul>
       </div>
 
-      <div className='mt-[50px] font-semibold text-black/90 text-lg'>
+      <div className='mt-[50px] sm:font-semibold text-black/90 text-lg'>
         <h4 className='text-orange text-left font-bold' data-aos="fade-up">
           Our Aim and Vision
         </h4>
@@ -52,7 +52,7 @@ const AboutText = () => {
           </p>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg font-semibold'>
+      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
         <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">
           Our Missions and Core Values
         </h4>
@@ -63,7 +63,7 @@ const AboutText = () => {
            quality, and efficiency.</p>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg font-semibold'>
+      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
         <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">
           Our core values are ingrained in everything we do:
         </h4>
@@ -77,7 +77,7 @@ const AboutText = () => {
         </div>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg font-semibold'>
+      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
         <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">Our Objectives:</h4>
         <p className='text-xl sm:text-2xl font-bold' data-aos="fade-up">
           We align our objectives with Sustainable Development Goals (SDGs):

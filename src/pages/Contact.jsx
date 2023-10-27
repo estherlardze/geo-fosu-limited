@@ -4,8 +4,8 @@ import {logo} from '../assets/index'
 const Contact = () => {
   return (
     <section className='w-[100%] overflow-hidden'>
-    <div className="bg-work bg-cover bg-no-repeat bg-center h-[50vh]">
-    <div className="bg-black/70 w-[100%] h-[50vh] border-b-[5px] border-orange">
+    <div className="bg-work bg-cover bg-no-repeat bg-center h-[60vh] sm:h-[50vh]">
+    <div className="bg-black/70 w-[100%] h-[60vh] sm:h-[50vh] border-b-[5px] border-orange">
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-6 text-white justify-between'>

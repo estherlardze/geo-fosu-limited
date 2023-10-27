@@ -74,37 +74,5 @@ export const data = [
 
 ]
 
-export const values = [
-    {
-        title: "Excellence:",
-        text: "We unwaveringly pursue excellence in all aspects of our services."
-    },
-    {
-        title: "Innovation:",
-        text: "We embrace innovation to continuously improve processes and achieve outstanding results."
-    },
-    {
-        title: "Integrity:",
-        text: "Integrity is the cornerstone of our business; we conduct ourselves with honesty, transparency, and ethical principles."
-    },
-    {
-        title: " Client-Centricity:",
-        text: "We prioritize our clients' needs and goals, working collaboratively to ensure their success."
-    },
-]
 
-export const objectives = [
-    {   
-   title: "Industry, Innovation, and Infrastructure",
-   text:  "Foster innovation and the adoption of sustainable construction practices to contribute to the development of resilient and eco-friendly infrastructure, aligning with SDG 9"
-    },
-    {
-     title: "Quality Education ",
-     text: "Cultivate collaborations with academic stakeholders and promote academic research to enhance knowledge dissemination, thereby contributing to achieving SDG 4 by advancing access to quality education.."
-    },
-   {
-    title: "Sustainable Cities and Communities",
-    text: "Implement sustainable project management practices that prioritize community well-being and environmental stewardship, thereby making a positive contribution to SDG 11."
-   },
-   
-   ]
+
