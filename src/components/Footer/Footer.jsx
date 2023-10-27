@@ -4,7 +4,8 @@ import {PiPhoneCallFill} from 'react-icons/pi'
 
 const Footer = () => {
   const phoneNumber = '+233544803157';
-  const whatsAppNumber = "+233544803157"
+  const whatsAppNumber = "+233544803157";
+  const email = "Geofosulimitedcompany@gmail.com";
 
   return (
     <footer className='w-[100%] overflow-hidden'>
@@ -22,7 +23,7 @@ const Footer = () => {
 
       <div className='bg-white items-center font-bold  justify-center py-2 flex flex-col sm:flex-row text-sm sm:text-lg'>
         <span className='text-orange mr-2'>Email:</span>
-        <Link to="mailto:example@example.com" className='text-sm sm:text-lg text-black/90'>
+        <Link to={`mailto:${email}`} className='text-sm sm:text-lg text-black/90'>
          Geofosulimitedcompany@gmail.com
         </Link>
       </div>
