@@ -37,64 +37,65 @@ const AboutText = () => {
           </ul>
       </div>
 
-      <div className='mt-[50px] sm:font-semibold text-black/90 text-lg'>
+      <div className='mt-[30px] sm:font-semibold text-black/90 text-lg'>
         <h4 className='text-orange text-left font-bold' data-aos="fade-up">
-          Our Aim and Vision
+          Our Aim
         </h4>
-        <p className='my-3' data-aos="fade-up">
-          Our aim is simple yet profound: to excel in delivering comprehensive construction, research,
-           and project management services while contributing to the betterment of society through 
-           sustainable practices and knowledge advancement
+        <p className='my-1' data-aos="fade-up"><q>
+        To excel in delivering comprehensive construction, research, and project management
+        services while contributing to the betterment of society through sustainable practices
+        and knowledge advancement.</q>
         </p>
-        <p data-aos="fade-up">
-          Our vision drives us forward, aspiring to be a pioneering force in construction innovation,
-           a beacon of academic excellence, and the epitome of project management proficiency.
-          </p>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
-        <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">
-          Our Missions and Core Values
+      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold'>
+        <h4 className='text-orange text-left font-bold mb-1' data-aos="fade-up">
+         Goal
         </h4>
         <p data-aos="fade-up">
-          Our missions are the foundation of our work. We are dedicated to delivering superior 
-          building construction services, fostering academic growth through rigorous research, 
-          and excelling in project management while upholding the highest standards of integrity,
-           quality, and efficiency.</p>
+        To be a leader in fostering sustainable development through innovative construction, 
+        cutting-edge academic research, and effective project management, with a commitment to 
+        achieving excellence in every facet of our services.</p>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
-        <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">
-          Our core values are ingrained in everything we do:
+      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+        <h4 className='text-orange text-left font-bold mb-1'>
+        Slogan
         </h4>
-        <div>
-          {values.map((value, index) => (
-            <p key={index} className='my-2' data-aos="fade-up">
-              <span className='font-bold mr-2'>{value.title}</span>
-              {value.text}
-            </p>
-          ))}
-        </div>
+         <p>Building Dreams, Nurturing Knowledge, Managing Excellence.</p>
+      </div>
+     
+      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+        <h4 className='text-orange text-left font-bold mb-1'>
+        Vision
+        </h4>
+         <p>To be a pioneering force in construction innovation, a beacon of academic 
+          excellence, and the epitome of project management proficiency.</p>
       </div>
 
-      <div className='mt-[50px] text-black/90 text-lg sm:font-semibold'>
-        <h4 className='text-orange text-left font-bold mb-3' data-aos="fade-up">Our Objectives:</h4>
-        <p className='text-xl sm:text-2xl font-bold' data-aos="fade-up">
-          We align our objectives with Sustainable Development Goals (SDGs):
-        </p>
-        <div>
-          {objectives.map((objective, index) => (
-            <p key={index} className='my-2' data-aos="fade-up">
-              <span className='font-bold mr-2'>{objective.title}</span>
-              {objective.text}
-            </p>
-          ))}
-        </div>
-        <p className='mt-8 mb-[70px]' data-aos="fade-up">
-          Thank you for visiting GEO-FOSU LIMITED COMPANY. We invite you to explore our services, share in our commitment 
-          to excellence, and join us on our journey to build dreams, nurture knowledge, and manage excellence. 
-          We look forward to working with you and enriching the lives of our clients and communities.</p>
-      </div>
+      <div className='mt-[30px] mb-[50px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+        <h4 className='text-orange text-left font-bold mb-1'>
+        Our Missions
+        </h4>
+         <p> Our mission is to deliver superior building construction services, 
+           foster academic growth through rigorous research, and excel in project 
+           management by adhering to the highest standards of integrity, quality, 
+           and efficiency.
+         </p><br />
+
+          <p>We are dedicated to empowering our clients through expert construction 
+            solutions, contributing to the academic world with impactful research, 
+            and ensuring project success through meticulous management, all while 
+            upholding ethical principles and client-centricity.
+          </p><br />
+
+          <p>At GEO-FOSU LIMITED COMPANY, our mission is to build, research, and manage 
+            with a purpose – to create enduring structures, advance knowledge, and 
+            execute projects flawlessly, enriching the lives of our clients and
+             communities.</p>
+
+      </div> 
+        
   </section>
   )
 }
