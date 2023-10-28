@@ -11,11 +11,11 @@ const AboutText = () => {
 
       <div className='grid grid-cols-2 mt-[60px] gap-8 justify-center'>
         <div className='col-span-2 lg:col-span-1' data-aos="fade-right">
-          <img src={about} alt="about us" />
+          <img src={about} alt="about us" className='h-[26rem] w-full lg:w-[90%]'/>
         </div>
         <div className='col-span-2 lg:col-span-1' data-aos="fade-left">
         <p className='text-orange text-left font-bold text-lg'>About Us</p>
-        <p className='mt-4 text-lg sm:font-semibold lg:leading-[2.0] text-black/80'>
+        <p className='mt-4 text-lg sm:font-semibold lg:leading-[2.5] text-black/80'>
         At GEO-FOSU, we are more than just a company; we are a passionate and purpose-driven 
         organization dedicated to delivering excellence in three distinct areas - Construction
         Consultation, Research Consultation, and Project Management Consultation. As you explore 
@@ -37,7 +37,7 @@ const AboutText = () => {
           </ul>
       </div>
 
-      <div className='mt-[30px] sm:font-semibold text-black/90 text-lg'>
+      <div className='mt-[30px] sm:font-semibold text-black/80 text-lg'>
         <h4 className='text-orange text-left font-bold' data-aos="fade-up">
           Our Aim
         </h4>
@@ -48,7 +48,7 @@ const AboutText = () => {
         </p>
       </div>
 
-      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold'>
+      <div className='mt-[30px] text-black/80 text-lg sm:font-semibold'>
         <h4 className='text-orange text-left font-bold mb-1' data-aos="fade-up">
          Goal
         </h4>
@@ -58,14 +58,14 @@ const AboutText = () => {
         achieving excellence in every facet of our services.</p>
       </div>
 
-      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+      <div className='mt-[30px] text-black/80 text-lg sm:font-semibold' data-aos="fade-up">
         <h4 className='text-orange text-left font-bold mb-1'>
         Slogan
         </h4>
          <p>Building Dreams, Nurturing Knowledge, Managing Excellence.</p>
       </div>
      
-      <div className='mt-[30px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+      <div className='mt-[30px] text-black/80 text-lg sm:font-semibold' data-aos="fade-up">
         <h4 className='text-orange text-left font-bold mb-1'>
         Vision
         </h4>
@@ -73,7 +73,7 @@ const AboutText = () => {
           excellence, and the epitome of project management proficiency.</p>
       </div>
 
-      <div className='mt-[30px] mb-[50px] text-black/90 text-lg sm:font-semibold' data-aos="fade-up">
+      <div className='mt-[30px] text-black/80 text-lg sm:font-semibold' data-aos="fade-up">
         <h4 className='text-orange text-left font-bold mb-1'>
         Our Missions
         </h4>
@@ -90,12 +90,41 @@ const AboutText = () => {
           </p><br />
 
           <p>At GEO-FOSU LIMITED COMPANY, our mission is to build, research, and manage 
-            with a purpose – to create enduring structures, advance knowledge, and 
+            with a purpose - to create enduring structures, advance knowledge, and 
             execute projects flawlessly, enriching the lives of our clients and
              communities.</p>
+       </div> 
 
-      </div> 
+       <div className='mt-[30px] text-lg text-black/80 sm:font-semibold'>
+         <h4 className='text-orange text-left font-bold mb-1' data-aos="fade-up">
+          Our Core Values
+         </h4>
+         {values.map((value, index) => (
+           <div key={index} className='my-2' data-aos="fade-up">
+             <span className='font-bold mr-2'>{value.title}</span>
+             <span className=''>{value.text}</span>
+           </div>
+         ))}
+       </div>
+
+       <div className='mt-[30px] text-lg text-black/80 sm:font-semibold'>
+         <h4 className='text-orange text-left font-bold mb-1' data-aos="fade-up">
+            Our Objectives
+         </h4>
+         {objectives.map((objective, index) => (
+           <div key={index} className='my-3' data-aos="fade-up">
+             <p className='font-bold mb-1'>{objective.title}</p>
+             <p className=''>{objective.text}</p>
+           </div>
+         ))}
+       </div>
         
+      <p  data-aos="fade-up"
+        className='my-[30px] text-lg text-black/80 sm:font-semibold'>
+        Thank you for visiting GEO-FOSU LIMITED COMPANY. We invite you to explore our services, 
+        share in our commitment to excellence, and join us on our journey to build dreams, 
+        nurture knowledge, and manage excellence. We look forward to working with you and 
+        enriching the lives of our clients and communities</p>  
   </section>
   )
 }

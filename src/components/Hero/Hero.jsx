@@ -9,7 +9,7 @@ const Hero = ({title}) => {
   useEffect(() => {
     const currentPage = window.location.pathname;
     if (currentPage === '/construction') {
-       setChangeBg('bg-workers');
+       setChangeBg('bg-construction');
     } 
     else if(currentPage === '/research')
     {

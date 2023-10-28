@@ -1,5 +1,5 @@
 import React from 'react'
-import {workers, work, research} from '../../assets/index'
+import {construction, work, research} from '../../assets/index'
 import { Link } from 'react-router-dom'
 
 
@@ -31,8 +31,8 @@ const Services = () => {
      <Link to='/construction' className='col-span-2 md:col-span-1'>
       <div  data-aos="zoom-in"
        className='my-6 relative text-white border-[6px] border-orange'>
-        <img src={workers} alt="service" className='w-full h-[18rem]'/>
-         <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
+        <img src={construction} alt="service" className='w-full h-[18rem]'/>
+         <div className='absolute w-full h-full left-0 top-0 bg-black/40 '>
           <div className='absolute left-[50px] top-[8rem]'>
             <p className='text-2xl uppercase'>Geo-fosu</p>
             <p className='uppercase font-bold text-2xl'>Construction Consult</p>

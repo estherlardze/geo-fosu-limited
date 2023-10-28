@@ -13,7 +13,7 @@ export default {
       backgroundImage: {
         "office" : "url('/src/assets/images/OFFC.jpg')",
         "research" : "url('/src/assets/images/RESEARCH.jpg')",
-        "workers" : "url('/src/assets/images/WORKERS.jpg')",
+        "construction" : "url('/src/assets/images/construction.jpeg')",
         "work" : "url('/src/assets/images/WORK.jpg')",
         "retro" : "url('/src/assets/images/RETRO.png')",
       }

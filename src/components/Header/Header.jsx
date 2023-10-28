@@ -15,10 +15,10 @@ const Header = () => {
         className='uppercase text-lg sm:text-xl md:text-2xl font-semibold text-white mt-[30px]'>
         Building dreams, nurturing knowledge, <br />managing excellence
       </h4>
-      <div className='flex mt-6' data-aos="fade-right" data-aos-duration="3000">
+     {/*} <div className='flex mt-6' data-aos="fade-right" data-aos-duration="3000">
         <button className='text-white bg-orange py-1 px-6 font-semibold rounded-l-full'>Search</button>
         <input type="text" className='rounded-r-full py-2 outline-none px-3 w-full sm:w-[50%]'/>
-      </div>
+  </div>*/}
     </header>
   )
 }
