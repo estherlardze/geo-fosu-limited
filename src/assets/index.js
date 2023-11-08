@@ -2,7 +2,7 @@ export {default as workers} from './images/WORKERS.jpg';
 export {default as retro} from './images/RETRO.png';
 export {default as offc} from './images/OFFC.jpg';
 export {default as mech} from './images/MECH.png';
-export {default as logo} from './images/GEO-FOSU-logo.jpg';
+export {default as logo} from './images/logo.jpg';
 export {default as mach} from './images/MACH.jpg';
 export {default as field} from './images/FIELD.jpg';
 export {default as about} from './images/about.jpeg';

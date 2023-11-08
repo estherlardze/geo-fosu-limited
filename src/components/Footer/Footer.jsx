@@ -3,7 +3,7 @@ import {BsWhatsapp} from 'react-icons/bs'
 import {PiPhoneCallFill} from 'react-icons/pi'
 
 const Footer = () => {
-  const phoneNumber = '+233544803157';
+  const phoneNumber = '+233598588924';
   const whatsAppNumber = "+233544803157";
   const email = "Geofosulimitedcompany@gmail.com";
 
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className='flex items-center gap-2'>
          <PiPhoneCallFill size={26}/>
-         <Link to={`tel:${phoneNumber}`} className='font-bold text-xl'>0598588294</Link>
+         <Link to={`tel:${phoneNumber}`} className='font-bold text-xl'>0598588924</Link>
        </div>
       </div>
 
