@@ -14,7 +14,7 @@ export {default as Form} from './Contact/Form';
 export {default as HeadText} from './HeadText';
 export { default as Address} from './Contact/Address';
 export {default as Images} from './Project/Images';
-export {default as Construction} from './Project/construction';
+export {default as Construction} from './Project/Construction';
 export {default as Academic} from './ResearchConsult/Academic';
 export {default as Industrial} from './ResearchConsult/Industrial';
 export {default as  Project} from './ResearchConsult/Project';
