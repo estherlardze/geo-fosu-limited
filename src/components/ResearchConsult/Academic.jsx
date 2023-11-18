@@ -14,7 +14,7 @@ const Academic = () => {
      </div>
 
      <h1 className='text-3xl sm:text-4xl md:text-5xl font-semibold text-center my-6'>
-        One image here...
+        Comming Soon...
     </h1>
  </section>
   
