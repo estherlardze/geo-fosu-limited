@@ -1,5 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {About, Construction, Contact, Home, Management, Projects, Research } from './pages'
+import {
+    About, 
+    Construction, 
+    Contact, 
+    Home, 
+    Management, 
+    Projects, 
+    Research ,
+    ProjectConsult,
+    ResearchConsult
+  } from './pages'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
@@ -22,6 +32,8 @@ function App() {
       <Route path="/research" element={<Research/>}/>
       <Route path="/management" element={<Management/>}/>
       <Route path="/construction" element={<Construction/>}/>
+      <Route path="/research-consult" element={<ResearchConsult/>}/>
+      <Route path="/project-consult" element={<ProjectConsult/>}/>
      </Routes>
 
     </BrowserRouter>

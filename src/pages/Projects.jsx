@@ -1,5 +1,5 @@
 import React from 'react'
-import {ProjectHero, ProjectText, Footer} from '../components/index'
+import {ProjectHero, ProjectText, Footer, Images, Construction} from '../components/index'
 
 
 const Projects = () => {
@@ -7,6 +7,9 @@ const Projects = () => {
     <div>
       <ProjectHero/>
       <ProjectText/>
+      <Images/>
+      <Construction/>
+      <Footer/>
     </div>
   )
 }

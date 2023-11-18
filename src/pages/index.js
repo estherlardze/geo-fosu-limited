@@ -5,3 +5,5 @@ export {default as Home} from './Home';
 export {default as Management} from './Management';
 export {default as Projects} from './Projects';
 export {default as Research} from './Research';
+export {default as ResearchConsult} from './ResearchConsult'
+export {default as ProjectConsult} from './ProjectConsult'
