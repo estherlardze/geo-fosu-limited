@@ -10,8 +10,9 @@ const ContactForm = () => {
   });
  
   const isFormFilled = () => {
-    return Object.values(formData).every((value) => value !== '');
+    return Object.values(formData).every((value) => value.trim() !== '');
   };
+  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +33,10 @@ const ContactForm = () => {
 
       body: JSON.stringify({formData})
    })
-   .then((response) => response.json())
+   .then((response) => {
+         console.log('Response from server:', response)
+        return response.json()
+      })
       .then((data) => {
         console.log('Form sent successfully:', data);
       })
@@ -110,7 +114,7 @@ const ContactForm = () => {
         <button
           type="submit"
           className="bg-blue text-white font-semibold py-2 px-6 rounded-md border border-transparent hover:bg-white hover:border-blue hover:text-blue transition-all"
-          disabled = {!isFormFilled}
+          disabled = {!isFormFilled()}
         >
           Submit
         </button>

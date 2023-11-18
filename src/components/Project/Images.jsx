@@ -13,7 +13,7 @@ const onImageClick = (item) => {
     setSelectedImageData(item);
 }
 
- if (!data) return <Loader/>
+ if (!data.length) return <Loader/>
 
   return (
     <section className='my-[50px] w-[90%] mx-[5%] sm:w-[94%] sm:mx-[3%] mb-[100px]'>

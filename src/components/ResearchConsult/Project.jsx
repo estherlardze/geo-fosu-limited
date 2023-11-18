@@ -8,7 +8,8 @@ const Project = () => {
     <div className="flex gap-10 flex-col md:flex-row items-center justify-center">
        <HeadText/>
 
-        <h1 className="text-xl font-bold sm:text-2xl md:text-3xl text-center px-2 lg:text-3xl bg-orange py-2 text-white uppercase h-fit">
+        <h1  data-aos="fade-up"
+          className="text-xl font-bold sm:text-2xl md:text-3xl text-center px-2 lg:text-3xl bg-orange py-2 text-white uppercase h-fit">
           Project Management 
         </h1>
 

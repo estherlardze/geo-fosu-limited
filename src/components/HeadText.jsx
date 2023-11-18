@@ -5,18 +5,22 @@ import { useEffect, useState } from 'react'
 const HeadText = () => {
 
   const [changetext, setChangeText] = useState("")
+  const [display, setDisplay] = useState("")
 
   useEffect(() => {
     const currentPage = window.location.pathname;
     if (currentPage === '/about' || currentPage === '/contact') {
       setChangeText('text-white');
-    } else {
+      setDisplay("block")
+    }
+     else {
       setChangeText('text-blue');
+      setDisplay("hidden md:block")
     }
   }, [])
 
   return (
-    <article className="hidden md:block" data-aos="fade-up">
+    <article className={`${display}`} data-aos="fade-up">
     <div className={`${changetext} flex gap-3 items-center `}>
       <img src={logo} alt="logo" className='w-[40px] h-[40px] rounded-full'/>
       <div>
