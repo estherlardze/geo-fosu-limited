@@ -19,7 +19,7 @@ const onImageClick = (item) => {
     <section className='my-[50px] w-[90%] mx-[5%] sm:w-[94%] sm:mx-[3%] mb-[100px]'>
         <div className='flex gap-3 flex-wrap justify-center items-center lg:justify-start'>
             {data.map((item) => (
-               <article key={item.id} onClick={() => onImageClick(item)}>
+               <article key={item.id} onClick={() => onImageClick(item)} data-aos="zoom-in">
                  <img 
                    src={item.image} 
                    alt={`item ${item.id}`}
