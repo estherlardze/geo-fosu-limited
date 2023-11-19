@@ -8,17 +8,14 @@ const ContactForm = () => {
     title: '',
     message: '',
   });
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
  
-  const isFormFilled = () => {
-    return Object.values(formData).every((value) => value.trim() !== '');
-  };
-  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
 
   const handleSubmit =  (e) => {
     e.preventDefault();
@@ -31,7 +28,7 @@ const ContactForm = () => {
         'Content-Type': 'application/json',
       },
 
-      body: JSON.stringify({formData})
+      body: JSON.stringify(formData)
    })
    .then((response) => {
          console.log('Response from server:', response)
@@ -39,6 +36,7 @@ const ContactForm = () => {
       })
       .then((data) => {
         console.log('Form sent successfully:', data);
+        setFormSubmitted(true);
       })
       .catch((error) => {
         console.error('Error submitting form:', error);
@@ -56,7 +54,13 @@ const ContactForm = () => {
   
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center gap-4 justify-center bg-gray-100">
+      {formSubmitted ? (
+          <h2 className="text-xl sm:text-2xl font-bold text-black/80 mb-4 text-center">
+            Form submitted successfully!
+          </h2>
+      ) : ""}
+
       <form onSubmit={handleSubmit}  data-aos="zoom-in"
        className="max-w-2xl w-full p-6 bg-white rounded shadow-md mx-4 sm:mx-auto">
         <h1 className="text-2xl font-bold text-center text-black/80 mb-4">Get in touch</h1>
@@ -69,6 +73,7 @@ const ContactForm = () => {
             value={formData.firstname}
             onChange={handleInputChange}
             className="w-full px-3 py-2 rounded border border-gray-300 outline-none"
+            required
           />
           <input
             type="text"
@@ -77,6 +82,7 @@ const ContactForm = () => {
             value={formData.lastname}
             onChange={handleInputChange}
             className="w-full px-3 py-2 rounded border border-gray-300 outline-none"
+            required
           />
         </div>
         
@@ -88,6 +94,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleInputChange}
             className="w-full px-3 py-2 rounded border border-gray-300 outline-none"
+            required
           />
         </div>
         <div className="mb-4">
@@ -98,6 +105,7 @@ const ContactForm = () => {
             value={formData.title}
             onChange={handleInputChange}
             className="w-full px-3 py-2 rounded border border-gray-300 outline-none"
+            required
           />
         </div>
         <div className="mb-4">
@@ -107,6 +115,7 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleInputChange}
             className="w-full px-3 py-2 rounded border border-gray-300 outline-none"
+            required
             rows="4"
           ></textarea>
         </div>
@@ -114,7 +123,6 @@ const ContactForm = () => {
         <button
           type="submit"
           className="bg-blue text-white font-semibold py-2 px-6 rounded-md border border-transparent hover:bg-white hover:border-blue hover:text-blue transition-all"
-          disabled = {!isFormFilled()}
         >
           Submit
         </button>
