@@ -59,11 +59,7 @@ const ContactForm = () => {
           <h2 className="text-xl sm:text-2xl font-bold text-black/80 mb-4 text-center">
             Form submitted successfully!
           </h2>
-      ) : (
-            <h2 className="text-xl sm:text-2xl font-bold text-red-700/ mb-4 text-center">
-              An error occured!
-            </h2>
-      )}
+      ) : ""}
 
       <form onSubmit={handleSubmit}  data-aos="zoom-in"
        className="max-w-2xl w-full p-6 bg-white rounded shadow-md mx-4 sm:mx-auto">
