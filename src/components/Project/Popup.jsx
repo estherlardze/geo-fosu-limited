@@ -16,13 +16,13 @@ const Popup = ({ showImage, setShowImage, selectedImageData }) => {
       {showImage && selectedImageData && (
         <section className='bg-black/95 w-full h-screen fixed left-0 top-0 z-50 flex flex-col justify-center items-center mb-10'>
           <div
-            className='flex justify-center items-start w-full mx-10 sm:mx-10 gap-10 mb-10'
+            className='flex flex-col-reverse sm:flex-row justify-center items-center sm:items-start w-[92%] mx-[4%] sm:w-full sm:mx-10 gap-10'
             onContextMenu={preventRightClick} 
           >
             <img
               src={selectedImageData.image}
               alt={`item ${selectedImageData.id}`}
-              className='w-[80%] h-[50vh] sm:h-[70] md:h-[80vh]'
+              className='w-full sm:w-[80%] h-[330px] sm:h-[70] md:h-[80vh]'
               onContextMenu={preventRightClick}
             />
 
@@ -33,10 +33,6 @@ const Popup = ({ showImage, setShowImage, selectedImageData }) => {
             />
           </div>
 
-          {/* <div className='flex items-center justify-center gap-10'>
-            <AiOutlineArrowLeft size={25} className='cursor-pointer text-white font-bold' />
-            <AiOutlineArrowRight size={25} className='cursor-pointer text-white font-bold' />
-          </div> */}
         </section>
       )}
     </>
