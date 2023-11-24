@@ -8,7 +8,7 @@ export const data = [
     text: "services involve providing research data and recommendations to manufacturing companies, helping them optimize their production processes and enhance efficiency."
     },
    {
-    title: "Market Research and Analysis",
+    title: "Market Research and Analysis:",
     text: "provide services related to market research and analysis to identify opportunities and trends that can inform new product development strategies."
     },
     {
