@@ -1,4 +1,3 @@
-import {logo} from '../../assets/index'
 import {HeadText, Navbar} from '../index'
 
 

@@ -3,34 +3,31 @@ import { Navbar} from '../index'
 import { logo } from '../../assets/index'
 
 
-const Hero = ({title}) => {
+const ResearchHero = () => {
   const [changeBg, setChangeBg] = useState("")
 
   useEffect(() => {
     const currentPage = window.location.pathname;
-    if (currentPage === '/construction') {
-       setChangeBg('bg-construction');
+
+    if (currentPage === '/research-topic-one' || currentPage === '/research-topic-three') {
+       setChangeBg('bg-orange/80');
     } 
-    else if(currentPage === '/research' || currentPage === "/research-consult")
+    else
     {
-      setChangeBg('bg-research');
+      setChangeBg('bg-black/70');
     }
-    else if(currentPage === '/management' || currentPage === '/project-consult')
-    {
-      setChangeBg('bg-work');
-    }
+    
   }, []);
   
 
   return (
-  <div className={`${changeBg} bg-cover bg-no-repeat bg-center h-[50vh] sm:h-[60vh]`}>
-    <div className="bg-black/70 w-[100%] h-[50vh] sm:h-[60vh] border-b-[5px] border-orange-500">
+  <div className="bg-retro bg-cover bg-no-repeat bg-center h-[50vh] sm:h-[60vh]">
+    <div className={`${changeBg} w-[100%] h-[50vh] sm:h-[60vh]`}>
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-6'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-[5vh] text-white justify-between'>
           <article className='border-[6px] p-3 border-white/50'>
-           <h1 className='text-3xl sm:text-4xl lg:text-5xl mb-2'>Geo-Fosu</h1>
-           <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>{title}</h1>
+           <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>Research Topic</h1>
           </article>
         
           <article className="hidden md:block">
@@ -52,4 +49,4 @@ const Hero = ({title}) => {
   )
 }
 
-export default Hero
+export default ResearchHero

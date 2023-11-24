@@ -1,11 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
+  const [listBg, setListBg] = useState("")
 
+  useEffect(() => {
+    const currentPage = window.location.pathname;
+
+    if (currentPage === '/research-topic-one' || currentPage === '/research-topic-three') {
+      setListBg('bg-tranparent');
+    } 
+    else
+    {
+      setListBg('bg-orange');
+    }
+    
+  }, []);
 
   const handleMenuClick = () => {
     setMenu(prev => !prev)
@@ -16,16 +29,16 @@ const Navbar = () => {
     <div className='p-4 sm:p-8 flex justify-end'>
       <ul className='hidden md:flex text-white font-bold uppercase gap-6 justify-end '>
        <Link to='/'>
-         <li className={`bg-orange py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}> Home </li>
+         <li className={`${listBg} py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}> Home </li>
         </Link>
         <Link to='/about'>
-         <li className={`bg-orange py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}>About</li>
+         <li className={`${listBg} py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}>About</li>
         </Link>
         <Link to='/projects'>
-         <li className={`bg-orange py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}> Projects</li>
+         <li className={`${listBg} py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}> Projects</li>
          </Link> 
          <Link to='/contact'>
-          <li className={`bg-orange py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}>Contact </li>
+          <li className={`${listBg} py-[2px] px-4 cursor-pointer hover:bg-transparent transition-all ease-in duration-300`}>Contact </li>
         </Link>
       </ul>   
       <div onClick={handleMenuClick} className='text-white block md:hidden'>

@@ -9,7 +9,7 @@ const ResearchText = () => {
         {data.map((item, index) => (
           <li className='block my-4 text-lg' key={index} data-aos="fade-up">
             <span className='font-bold mr-1 text-xl'>{item.title}</span>
-            <span className='sm:font-semibold text-black/80'>{item.text}</span>
+            <span className='text-black/80'>{item.text}</span>
           </li>
         ))}
       </ul>

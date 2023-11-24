@@ -20,7 +20,7 @@ const Popup = ({ showImage, setShowImage, selectedImageData }) => {
           >
             <img
               src={selectedImageData.image}
-              alt={`item ${selectedImageData.id}`}
+              alt={`project work ${selectedImageData.id}`}
               className='w-full sm:w-[80%] h-[300px] sm:h-[70] md:h-[80vh]'
               onContextMenu={preventRightClick}
             />

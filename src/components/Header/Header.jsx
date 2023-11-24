@@ -1,11 +1,11 @@
 import React from 'react'
-import {logo} from '../../assets/index'
+import { logo } from '../../assets/index'
 
 const Header = () => {
   return (
     <header className='w-[90%] mx-[5%] md:w-[80%] md:mx-[10%] mt-[60px]'>
       <div className='flex gap-6 items-start sm:items-center' data-aos="fade-right">
-        <img src={logo} alt="logo" className='w-[80px] h-[80px] rounded-full'/>
+        <img src={logo} alt="Geo Fosu logo" className='w-[80px] h-[80px] rounded-full'/>
         <div className='text-white'>
          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold'>GEO-FOSU</h1>
          <h4 className='font-semibold text-xl sm:text-2xl'>Limited Company</h4>

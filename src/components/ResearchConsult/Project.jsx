@@ -5,11 +5,11 @@ import HeadText from '../HeadText'
 const Project = () => {
   return (
     <section className='w-[90%] mx-[5%] sm:w-[94%] sm:mx-[3%] my-[50px]'>
-    <div className="flex gap-10 flex-col md:flex-row items-center justify-center">
+    <div className="flex gap-10 flex-col md:flex-row items-center justify-center w-full">
        <HeadText/>
 
         <h1  data-aos="fade-up"
-          className="text-xl font-bold sm:text-2xl md:text-3xl text-center px-2 lg:text-3xl bg-orange py-2 text-white uppercase h-fit">
+          className="text-xl w-full md:w-[60%] font-bold sm:text-2xl md:text-3xl text-center px-2 lg:text-3xl bg-orange py-2 text-white uppercase h-fit">
           Project Management 
         </h1>
 

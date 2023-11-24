@@ -16,7 +16,7 @@ const Services = () => {
      <Link to='/research'>
       <div  data-aos="zoom-in"
        className='flex justify-center my-6 relative text-white border-[6px] border-black/80'>
-        <img src={research} alt="service" className='w-full h-[18rem]'/>
+        <img src={research} alt="reserch consult" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
             <p className='text-2xl uppercase'>Geo-fosu</p>
@@ -31,7 +31,7 @@ const Services = () => {
      <Link to='/construction' className='col-span-2 md:col-span-1'>
       <div  data-aos="zoom-in"
        className='my-6 relative text-white border-[6px] border-orange'>
-        <img src={construction} alt="service" className='w-full h-[18rem]'/>
+        <img src={construction} alt="construction consult" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/40 '>
           <div className='absolute left-[50px] top-[8rem]'>
             <p className='text-2xl uppercase'>Geo-fosu</p>
@@ -44,7 +44,7 @@ const Services = () => {
       <Link to='/management' className='col-span-2 md:col-span-1'>
        <div data-aos="zoom-in"
         className='my-6 relative text-white  border-[6px] border-blue/80'>
-        <img src={work} alt="service" className='w-full h-[18rem]'/>
+        <img src={work} alt="management consult" className='w-full h-[18rem]'/>
          <div className='absolute w-full h-full left-0 top-0 bg-black/50 '>
           <div className='absolute left-[50px] top-[8rem]'>
             <p className='text-2xl uppercase'>Geo-fosu</p>

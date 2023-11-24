@@ -22,7 +22,7 @@ const HeadText = () => {
   return (
     <article className={`${display}`} data-aos="fade-up">
     <div className={`${changetext} flex gap-3 items-center `}>
-      <img src={logo} alt="logo" className='w-[40px] h-[40px] rounded-full'/>
+      <img src={logo} alt="Geo Fosu logo" className='w-[40px] h-[40px] rounded-full'/>
       <div>
        <h1 className='font-bold'>GEO-FOSU</h1>
        <h4 className='font-semibold text-xs'>Limited Company</h4>

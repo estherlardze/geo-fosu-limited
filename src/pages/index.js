@@ -7,3 +7,7 @@ export {default as Projects} from './Projects';
 export {default as Research} from './Research';
 export {default as ResearchConsult} from './ResearchConsult'
 export {default as ProjectConsult} from './ProjectConsult'
+export {default as ResearchTopicOne} from './ResearchTopicOne'
+export {default as ResearchTopicTwo} from './ResearchTopicTwo'
+export {default as ResearchTopicThree} from './ResearchTopicThree'
+export {default as ResearchTopicFour} from './ResearchTopicFour'
