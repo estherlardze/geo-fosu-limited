@@ -18,7 +18,7 @@ export {default as Construction} from './Project/Construction';
 export {default as Academic} from './ResearchConsult/Academic';
 export {default as Industrial} from './ResearchConsult/Industrial';
 export {default as  Project} from './ResearchConsult/Project';
-export {default as Breadcrumb} from './BreadCrumb';
+export {default as BreadCrumb} from './BreadCrumb';
 
 
 
