@@ -1,5 +1,5 @@
 import {HeadText, Navbar} from '../index'
-
+import BreadCrumb from '../breadCrumb'
 
 const AboutHero = () => {
  
@@ -9,9 +9,12 @@ const AboutHero = () => {
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-6 text-white justify-between'>
+         <div>
           <article className='border-[6px] border-white/50'>
-           <h1 className='text-3xl sm:text-4xl lg:text-5xl uppercase font-bold bg-white/30 p-4'>About</h1>
-          </article>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl uppercase font-bold bg-white/30 p-4'>About</h1>
+           </article>
+           <BreadCrumb/>
+          </div>
          <HeadText/>
         </div>
       </section>

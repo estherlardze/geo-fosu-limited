@@ -16,14 +16,14 @@ const AboutHero = () => {
 
         <div className='grid grid-cols-2 gap-12 lg:w-[60%] lg:mx-[20%] md:w-[80%] md:mx-[10%] w-[90%] mx-[5%] mt-8'>
          <Link 
-           to="/research-consult"
+           to="/projects/research-consult"
            className='bg-white py-3 px-4 text-orange col-span-2 sm:col-span-1'
            >
            <p className='text-2xl uppercase'>Geo-fosu</p>
            <p className='uppercase font-bold text-2xl'>Research Consult</p>
          </Link>
          <Link 
-           to='/project-consult'
+           to='/projects/project-consult'
            className='bg-white  py-3 px-4 text-orange col-span-2 sm:col-span-1'
            >
            <p className='text-2xl uppercase'>Geo-fosu</p>

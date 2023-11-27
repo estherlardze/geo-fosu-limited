@@ -10,7 +10,8 @@ const Navbar = () => {
   useEffect(() => {
     const currentPage = window.location.pathname;
 
-    if (currentPage === '/research-topic-one' || currentPage === '/research-topic-three') {
+    if (currentPage === '/home/projects/research-consult/research-topic-one' 
+         || currentPage === '/home/projects/research-consult/research-topic-three') {
       setListBg('bg-tranparent');
     } 
     else

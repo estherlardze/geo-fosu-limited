@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar} from '../index'
 import { logo } from '../../assets/index'
-
+import BreadCrumb from '../breadCrumb'
 
 const Hero = ({title}) => {
   const [changeBg, setChangeBg] = useState("")
@@ -11,11 +11,11 @@ const Hero = ({title}) => {
     if (currentPage === '/construction') {
        setChangeBg('bg-construction');
     } 
-    else if(currentPage === '/research' || currentPage === "/research-consult")
+    else if(currentPage === '/research' || currentPage === "/projects/research-consult")
     {
       setChangeBg('bg-research');
     }
-    else if(currentPage === '/management' || currentPage === '/project-consult')
+    else if(currentPage === '/management' || currentPage === '/projects/project-consult')
     {
       setChangeBg('bg-work');
     }
@@ -28,10 +28,14 @@ const Hero = ({title}) => {
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-6'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-[5vh] text-white justify-between'>
-          <article className='border-[6px] p-3 border-white/50'>
-           <h1 className='text-3xl sm:text-4xl lg:text-5xl mb-2'>Geo-Fosu</h1>
-           <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>{title}</h1>
-          </article>
+          <div>
+            <article className='border-[6px] p-3 border-white/50'>
+              <h1 className='text-3xl sm:text-4xl lg:text-5xl mb-2'>Geo-Fosu</h1>
+              <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>{title}</h1>
+             </article>
+             <BreadCrumb/>
+          </div>
+         
         
           <article className="hidden md:block">
             <div className='flex gap-3 items-center text-white'>

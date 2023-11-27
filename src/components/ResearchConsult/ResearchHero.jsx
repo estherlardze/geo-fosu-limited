@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar} from '../index'
 import { logo } from '../../assets/index'
+import BreadCrumb from '../breadCrumb';
 
 
 const ResearchHero = () => {
@@ -9,7 +10,8 @@ const ResearchHero = () => {
   useEffect(() => {
     const currentPage = window.location.pathname;
 
-    if (currentPage === '/research-topic-one' || currentPage === '/research-topic-three') {
+    if (currentPage === '/projects/research-consult/ai-devive'
+        || currentPage === '/projects/research-consult/project-management') {
        setChangeBg('bg-orange/80');
     } 
     else
@@ -26,9 +28,12 @@ const ResearchHero = () => {
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-6'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-[5vh] text-white justify-between'>
-          <article className='border-[6px] p-3 border-white/50'>
-           <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>Research Topic</h1>
-          </article>
+          <div>
+            <article className='border-[6px] p-3 border-white/50'>
+              <h1 className='text-2xl sm:text-3xl lg:text-[30px] font-bold uppercase'>Research Topic</h1>
+             </article>
+             <BreadCrumb/>
+          </div>
         
           <article className="hidden md:block">
             <div className='flex gap-3 items-center text-white'>

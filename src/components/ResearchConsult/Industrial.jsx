@@ -7,7 +7,7 @@ const Industrial = () => {
     <div className="flex gap-10 flex-col md:flex-row items-center justify-center w-full">
        <HeadText/>
 
-        <h1 data-aos="fade-up"
+        <h1 
           className="text-xl w-full md:w-[60%] font-bold sm:text-2xl md:text-3xl text-center px-2 lg:text-3xl bg-blue py-2 text-white uppercase h-fit">
           Industrial Research
         </h1>

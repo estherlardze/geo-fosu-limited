@@ -20,7 +20,7 @@ const HeadText = () => {
   }, [])
 
   return (
-    <article className={`${display}`} data-aos="fade-up">
+    <article className={`${display}`}>
     <div className={`${changetext} flex gap-3 items-center `}>
       <img src={logo} alt="Geo Fosu logo" className='w-[40px] h-[40px] rounded-full'/>
       <div>

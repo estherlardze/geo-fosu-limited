@@ -1,6 +1,6 @@
 import {Navbar, Footer, Form, HeadText, Address} from '../components/index'
 import { Helmet } from 'react-helmet';
-
+import BreadCrumb from '../components/breadCrumb';
 
 const Contact = () => {
   return (
@@ -25,9 +25,12 @@ const Contact = () => {
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%]'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-6 text-white justify-between'>
-          <article className='border-[6px] border-white/50'>
-           <h1 className='text-3xl sm:text-4xl lg:text-5xl uppercase font-bold bg-white/30 p-4'>Contact us</h1>
-          </article>
+          <div>
+            <article className='border-[6px] border-white/50'>
+              <h1 className='text-3xl sm:text-4xl lg:text-5xl uppercase font-bold bg-white/30 p-4'>Contact us</h1>
+            </article>
+            <BreadCrumb/>
+          </div>
         
         <HeadText/>
         </div>
