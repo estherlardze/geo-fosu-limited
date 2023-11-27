@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +50,13 @@ const ContactForm = () => {
         email: '',
         title: '',
         message: '',
+      });
+
+       // Track the form submission as a Google Analytics event
+      ReactGA.event({
+        category: 'Form',
+        action: 'Submit',
+        label: 'Enquiry Form',
       });
     }
  
