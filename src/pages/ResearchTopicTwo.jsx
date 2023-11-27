@@ -7,10 +7,9 @@ const ResearchTopicTwo = () => {
 
   return (
     <div>
-      <ResearchHero/>
+      <ResearchHero title={researchTwo.title}/>
        <section className='bg-blue text-white '>
-         <div className='mx-[5%] w-[90%] lg:mx-[3%] lg:w-[94%] sm:text-lg'>
-          <h1 className='font-bold text-lg sm:text-2xl py-5'>{researchTwo.title}</h1>
+         <div className='mx-[5%] w-[90%] lg:mx-[3%] lg:w-[94%] sm:text-lg pt-4'>
            <h1 className='font-bold uppercase text-lg sm:text-2xl pb-3'>Abstract</h1>
           <ul>
             {researchTwo.abstract.map((abstract, index) => (

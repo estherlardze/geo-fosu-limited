@@ -3,27 +3,29 @@ import { Navbar, BreadCrumb} from '../index'
 import { logo } from '../../assets/index'
 
 
-const ResearchHero = () => {
+const ResearchHero = ({title}) => {
   const [changeBg, setChangeBg] = useState("")
 
   useEffect(() => {
     const currentPage = window.location.pathname;
 
-    if (currentPage === '/projects/research-consult/ai-devive'
+    if (currentPage === '/projects/research-consult/ai-device'
         || currentPage === '/projects/research-consult/project-management') {
        setChangeBg('bg-orange/80');
     } 
     else
     {
-      setChangeBg('bg-black/70');
+      setChangeBg('bg-black/80');
     }
     
+
+  
   }, []);
   
 
   return (
-  <div className="bg-retro bg-cover bg-no-repeat bg-center h-[50vh] sm:h-[60vh]">
-    <div className={`${changeBg} w-[100%] h-[50vh] sm:h-[60vh]`}>
+  <div className="bg-retro bg-cover bg-no-repeat bg-center h-fit sm:h-[65vh] pb-3">
+    <div className={`${changeBg} w-[100%] h-fit sm:h-[65vh] pb-3`}>
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-6'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-[5vh] text-white justify-between'>
@@ -47,6 +49,7 @@ const ResearchHero = () => {
               </h4>
           </article>
         </div>
+        <h1 className='mt-6 text-white font-bold uppercase sm:text-xl pb-3'>{title}</h1>
       </section>
     </div>
   </div>
