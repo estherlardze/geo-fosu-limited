@@ -1,6 +1,5 @@
-import {Navbar, Footer, Form, HeadText, Address} from '../components/index'
+import {Navbar, Footer, Form, HeadText, Address, BreadCrumb} from '../components/index'
 import { Helmet } from 'react-helmet';
-import BreadCrumb from '../components/breadCrumb';
 
 const Contact = () => {
   return (

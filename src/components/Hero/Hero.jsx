@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar} from '../index'
+import { Navbar, BreadCrumb} from '../index'
 import { logo } from '../../assets/index'
-import BreadCrumb from '../breadCrumb'
 
 const Hero = ({title}) => {
   const [changeBg, setChangeBg] = useState("")

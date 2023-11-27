@@ -1,5 +1,5 @@
 import {HeadText, Navbar} from '../index'
-import BreadCrumb from '../breadCrumb'
+import BreadCrumb from '../BreadCrumb'
 
 const AboutHero = () => {
  
