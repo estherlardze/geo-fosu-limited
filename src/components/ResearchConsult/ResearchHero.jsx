@@ -24,8 +24,8 @@ const ResearchHero = ({title}) => {
   
 
   return (
-  <div className="bg-retro bg-cover bg-no-repeat bg-center h-fit sm:h-[65vh] pb-3">
-    <div className={`${changeBg} w-[100%] h-fit sm:h-[65vh] pb-3`}>
+  <div className="bg-retro bg-cover bg-no-repeat bg-center h-fit">
+    <div className={`${changeBg} w-[100%] h-fit pb-3`}>
       <section className='w-[90%] mx-[5%] lg:w-[80%] lg:mx-[10%] py-6'>
         <Navbar/>
         <div className='flex flex-col md:flex-row gap-6 md:items-center mt-[5vh] text-white justify-between'>
@@ -49,7 +49,7 @@ const ResearchHero = ({title}) => {
               </h4>
           </article>
         </div>
-        <h1 className='mt-6 text-white font-bold uppercase sm:text-xl pb-3'>{title}</h1>
+        <h1 className='text-white font-bold uppercase sm:text-xl md:text-2xl pt-9'>{title}</h1>
       </section>
     </div>
   </div>
