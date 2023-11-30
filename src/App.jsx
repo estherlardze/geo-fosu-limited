@@ -13,7 +13,7 @@ import {
 } from './pages'
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-DQ52YK9VX1');
+ReactGA.initialize('G-V2CMKP00GG');
 
 
 
