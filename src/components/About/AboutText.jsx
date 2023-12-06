@@ -48,7 +48,7 @@ const AboutText = () => {
         </p>
       </div>
 
-      <div className='mt-[30px] text-black sm:font-semibold'>
+      <div className='mt-[30px] text-black '>
         <h4 className='text-orange text-left font-bold mb-1 text-lg' data-aos="fade-up">
          Goal
         </h4>

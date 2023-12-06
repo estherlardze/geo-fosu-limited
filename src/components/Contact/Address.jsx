@@ -15,7 +15,7 @@ const Address = () => {
           </span></p>
           <p className='my-2 font-bold'>Contact:
            <span className='font-medium'>
-            WhatsApp: 0544803157/ Tel: 0598588294
+            WhatsApp: 0544803157/ Tel:  0598588924
           </span></p>
           <p className='my-2 font-bold'>
             Location: 
