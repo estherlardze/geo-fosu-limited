@@ -11,6 +11,12 @@ ReactGA.send({
         page: window.location.pathname, 
     });
 
+ReactGA.event({
+      category: 'Form',
+      action: 'Submit',
+      label: 'Contact Form', 
+    });
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
