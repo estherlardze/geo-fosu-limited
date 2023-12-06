@@ -12,9 +12,6 @@ import {
   ResearchTopicOne, ResearchTopicTwo, ResearchTopicThree, ResearchTopicFour
 } from './pages'
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-V2CMKP00GG');
-
 
 
 function App() {
@@ -22,7 +19,6 @@ function App() {
   useEffect(() => {
      AOS.init({ duration: 1000 });
 
-     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
 
